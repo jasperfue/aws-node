@@ -12,7 +12,7 @@ app.use(express.json());
 
 //io.engine.use(helmet());
 
-app.get("/", (req, res) => res.send("<h1> Hello World</h1>"));
+app.get("/test", (req, res) => res.send("<h1> Hello World</h1>"));
 
 const port = process.env.PORT || 8080
 app.listen(port, () => console.log(`Listening on port ${port}`));
